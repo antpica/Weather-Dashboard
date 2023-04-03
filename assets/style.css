@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    background-color:lightblue;
+    font-size: 200%;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:blue;
+}
+
+.main-page{
+    width: 100%;
+    display:grid;
+    height: 700px;
+    grid-template-areas:
+        'SearchCity TodayWether TodayWether TodayWether TodayWether'
+        'SearchCity TodayWether TodayWether TodayWether TodayWether'
+        'SearchCity FutureWether FutureWether FutureWether FutureWether'
+        'SearchCity FutureWether FutureWether FutureWether FutureWether'
+        
+}
+
+.search{
+    grid-area: SearchCity;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    gap: 10px;
+}
+
+.search span{
+    display: flex;
+    justify-content: center;
+}
+
+.CurrentWether{
+    grid-area: TodayWether;
+    border: 2px solid orange;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FutureWether{
+    grid-area: FutureWether;
+    border: 2px solid pink;
+    font-size: 180%;
+    
+}
+
+.futuredates{
+    display: flex;
+
+}
+
+.formatColumns{
+    display: flex;
+    flex-direction: column;
+    background-color: #007bff;
+    
+    margin: 30px;
+}
